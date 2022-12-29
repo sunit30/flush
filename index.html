@@ -6,8 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Flush</title>
+    <script type="text/javascript">
+      window.onload = () => {
+        var modal = document.getElementById('simpleModal');
+        modal.style.display = 'block';
+      }
+    </script>
   </head>
   <body>
+    <div id="simpleModal" class="modal-overlay">
+      <div class="modal-content">
+        <div class="modal-header">
+            <span class="closeBtn">X</span>
+            <h2>Javascript functionality mimicking flush operation 😆️</h2>
+        </div>
+        <div class="modal-body">
+          <p><li>There are 2 types of flush - Short and Long</li></p>
+          <p><li>Once you flush, you cannot immediately flush again!</li></p>
+          <p><li>Refilling starts immediately after flushing</li></p>
+          <p><li>Half way through the refill process, you can flush the little residue water available!</li></p>
+          <p><li>You can even peek outside and hear the birds chirping!</li></p>
+        </div>
+      </div>
+    </div>
     <div id="img-container">
       <img
         id="main-image"
@@ -15,6 +36,7 @@
         src="images/interior.jpeg"
         alt="bathroom-image"
       />
+      <button id="modalBtn" class="button location">Help</button>
       <div id="short" class="location"></div>
       <div id="long" class="location"></div>
       <div id="toggle" class="location">
