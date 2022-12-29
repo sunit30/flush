@@ -1,5 +1,6 @@
 body {
   background-color: rgba(52, 52, 52, 0.797);
+  font-family: sans-serif;
 }
 #img-container {
   width: 100vw;
@@ -12,6 +13,8 @@ body {
 .main-image-interior {
   width: 600px;
   height: auto;
+  border-style:solid;
+  border-image:linear-gradient(#e439ef, #1ce) 1;
 }
 #img-container .location {
   position: absolute;
@@ -35,6 +38,15 @@ body {
   top: 220px;
   left: 890px;
 }
+
+#img-container .location#modalBtn {
+  width: 75px;
+  height: 50px;
+  top: 220px;
+  left: 49px;
+  font-size: 17px;
+}
+
 #image-toggle {
   width: 47px;
   height: auto;
@@ -46,3 +58,70 @@ body {
   width: 1000px;
   height: auto;
 }
+
+.button{
+  background: #1ce;
+  padding: 1em 1em;
+  color: white;
+  border:  0;
+  transition: background 0.5s;
+}
+
+.button:hover{
+  background: #e439ef;
+  cursor: pointer;
+}
+
+.modal-overlay{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content{
+  font-size: 20px;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  margin: 10% auto;
+  width: 70%;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
+  border: 3px solid #e439ef;
+  border-radius: 12px;
+
+}
+
+.modal-header h2, .modal-footer h3{
+  margin: 0;
+}
+
+.modal-header{
+  background-color: #f4f4f4;
+  box-sizing: border-box;
+  margin: 30px;
+  padding: 15px;
+  color: #e439ef;
+}
+
+.modal-body{
+  padding: 10px 20px;
+  margin: 20px;
+}
+
+.closeBtn{
+  font-size: 30px;
+  color: #e439ef;
+  float: right;
+}
+
+.closeBtn:hover,.closeBtn:focus{
+  color: #e439ef;
+  text-decoration: none;
+  cursor:  pointer;
+}
+
